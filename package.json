@@ -1,0 +1,23 @@
+{
+  "name": "node_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blgeuse/node_js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blgeuse/node_js/issues"
+  },
+  "homepage": "https://github.com/Blgeuse/node_js#readme",
+  "dependencies": {
+    "yargs": "^17.5.1"
+  }
+}
