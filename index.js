@@ -1,5 +1,5 @@
 const yargs =  require('yargs');
-const pkg = require('./package.json');
+const { addNote, getNotes } = require('./notes.controller');
 
 yargs.command({
   command: 'add',
@@ -7,12 +7,12 @@ yargs.command({
   builder: {
     title: {
       type: 'string',
-      discribe: 'Note title ',
+      describe: 'Note title ',
       demandOption: true,
     }
   },
-  handler() {
-    console.log('Add comman');
+  handler({title}) {
+    addNote(title);
   }
 })
 
@@ -20,7 +20,7 @@ yargs.command({
   command: 'list',
   describe: 'print all notes',
   handler() {
-    console.log('List comman');
+    console.log(getNotes());
   }
 })
 
